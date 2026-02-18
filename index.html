@@ -15,7 +15,6 @@
             background-color: #f8f9fa;
             color: #333;
         }
-        /* 导航栏 */
         .navbar {
             background-color: white;
             padding: 1rem 2rem;
@@ -27,7 +26,7 @@
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
-            color: #2d8675;
+            color: #00b37e;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -43,9 +42,22 @@
             font-weight: 500;
         }
         .nav-links a:hover {
-            color: #2d8675;
+            color: #00b37e;
         }
-        /* 搜索栏 */
+        .banner {
+            background-color: #00b37e;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .banner p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
         .search-bar {
             max-width: 800px;
             margin: 2rem auto;
@@ -59,25 +71,9 @@
             outline: none;
         }
         .search-bar input:focus {
-            border-color: #2d8675;
-            box-shadow: 0 0 0 3px rgba(45, 134, 117, 0.1);
+            border-color: #00b37e;
+            box-shadow: 0 0 0 3px rgba(0, 179, 126, 0.1);
         }
-        /* 品牌banner */
-        .banner {
-            background-color: #2d8675;
-            color: white;
-            text-align: center;
-            padding: 3rem 0;
-        }
-        .banner h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        .banner p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        /* 产品分类 */
         .categories {
             max-width: 1200px;
             margin: 2rem auto;
@@ -97,11 +93,10 @@
             transition: all 0.2s;
         }
         .category-tag:hover {
-            background-color: #2d8675;
+            background-color: #00b37e;
             color: white;
-            border-color: #2d8675;
+            border-color: #00b37e;
         }
-        /* 产品卡片 */
         .product-grid {
             max-width: 1200px;
             margin: 0 auto 3rem;
@@ -145,7 +140,6 @@
             color: #4a5568;
             line-height: 1.6;
         }
-        /* 响应式 */
         @media (max-width: 768px) {
             .banner h1 {
                 font-size: 2rem;
@@ -157,10 +151,9 @@
     </style>
 </head>
 <body>
-    <!-- 导航栏（带LOGO） -->
     <nav class="navbar">
         <a href="#" class="logo">
-            <img src="https://picsum.photos/id/1025/150/50" alt="梅沂云茶LOGO" class="logo-img">
+            <img src="https://img.icons8.com/fluency/96/00b37e/tea-leaf.png" alt="梅沂云茶LOGO" class="logo-img">
             梅沂云茶
         </a>
         <div class="nav-links">
@@ -171,18 +164,15 @@
         </div>
     </nav>
 
-    <!-- 品牌Banner -->
     <div class="banner">
         <h1>梅沂云茶 - 天然茶树精油美妆</h1>
         <p>萃取澳洲茶树精华，温和呵护每一寸肌肤</p>
     </div>
 
-    <!-- 搜索栏 -->
     <div class="search-bar">
         <input type="text" placeholder="搜索梅沂云茶产品...">
     </div>
 
-    <!-- 产品分类 -->
     <div class="categories">
         <div class="category-tag">全部产品</div>
         <div class="category-tag">面部清洁</div>
@@ -190,31 +180,30 @@
         <div class="category-tag">基础保养</div>
     </div>
 
-    <!-- 产品展示（正确产品图） -->
     <div class="product-grid">
-        <!-- 产品1：面部清洁（洁面乳） -->
+        <!-- 洁面乳 -->
         <div class="product-card">
-            <img src="https://picsum.photos/id/225/400/400" alt="茶树精油净澈洁面乳" class="product-img">
+            <img src="https://images.unsplash.com/photo-1622737139543-0076b437348e5?w=400&h=400&fit=crop" alt="茶树精油净澈洁面乳" class="product-img">
             <div class="product-info">
                 <h3 class="product-name">茶树精油净澈洁面乳</h3>
                 <div class="product-price">¥89.00</div>
-                <p class="product-desc">天然茶树精油提炼，深层清洁毛孔，控油祛痘，温和不刺激。氨基酸表活配方，洗后不紧绷，适合油性/痘痘肌日常使用。</p>
+                <p class="product-desc">天然茶树精油提炼，深层清洁毛孔，控油祛痘，温和不刺激。氨基酸表活配方，洗后不紧绷，适合油性/痘痘肌。</p>
             </div>
         </div>
 
-        <!-- 产品2：卸妆（卸妆水） -->
+        <!-- 卸妆水 -->
         <div class="product-card">
-            <img src="https://picsum.photos/id/227/400/400" alt="茶树精油卸妆水" class="product-img">
+            <img src="https://images.unsplash.com/photo-1584970125901-b605363329955?w=400&h=400&fit=crop" alt="茶树精油卸妆水" class="product-img">
             <div class="product-info">
                 <h3 class="product-name">茶树精油温和卸妆水</h3>
                 <div class="product-price">¥119.00</div>
-                <p class="product-desc">茶树精油配方，快速溶解彩妆，卸妆+清洁二合一，敏感肌适用。不含酒精香精，眼唇可用，轻松卸除防水彩妆。</p>
+                <p class="product-desc">茶树精油配方，快速溶解彩妆，卸妆+清洁二合一，敏感肌适用。不含酒精香精，眼唇可用，卸除防水彩妆。</p>
             </div>
         </div>
 
-        <!-- 产品3：基础保养（乳液） -->
+        <!-- 保养乳液 -->
         <div class="product-card">
-            <img src="https://picsum.photos/id/237/400/400" alt="茶树精油基础保养乳液" class="product-img">
+            <img src="https://images.unsplash.com/photo-1559783806-c0945c9217489?w=400&h=400&fit=crop" alt="茶树精油基础保养乳液" class="product-img">
             <div class="product-info">
                 <h3 class="product-name">茶树精油基础保养乳液</h3>
                 <div class="product-price">¥169.00</div>
